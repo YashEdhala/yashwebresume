@@ -3,47 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            width: 50%;
-            text-align: center;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-            line-height: 1.5;
-        }
-    </style>
+    <title>Dice Roller for Yahtzee</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="rollDice()"> <!-- Automatically roll dice on page load -->
     <div class="container">
-        <h1>Hi, I'm Yeswanth Edhala!</h1>
-        <p><strong>Preferred Name:</strong> Yash</p>
-        <p><strong>Year at Lewis:</strong> 4</p>
-        <p><strong>Major/Minor/Concentrations:</strong> Computer Science</p>
-        <p><strong>Current Job Title:</strong> Library Assistant at Lewis</p>
-        <p><strong>Job Responsibilities:</strong> Assisting with library operations and helping students find resources</p>
-        <p><strong>Hobbies & Interests:</strong> Playing cricket</p>
-        <p><strong>Why I'm Pursuing this Degree:</strong> I have always been passionate about technology while growing up</p>
-        <p><strong>Why I'm Taking This Course:</strong> Despite this being a requirement for graduation, I would love to learn more on Github and how to push and collaborate on the platform</p>
-        <p><strong>Fun Fact About Me:</strong> I'm the Cricket Club President at Lewis</p>
+        <h1>Dice Roller for Yahtzee</h1>
+        <p id="instructions">Click the button below to roll five dice for Yahtzee!</p>
+        <div class="dice-container" id="dice-container">
+            <!-- Dice will be displayed here -->
+        </div>
+        <button id="roll-button" autofocus>Roll Dice</button> <!-- Autofocus the roll button -->
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
